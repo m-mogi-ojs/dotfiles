@@ -60,4 +60,4 @@ set list
 " タブを -- 半スペを - で表示する
 set lcs=tab:>-,trail:-
 " 末尾に改行がついていないファイルを編集し保存するとファイル末尾に改行追加されるのを防ぐ
-lines yanked
+set nofixeol

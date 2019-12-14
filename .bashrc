@@ -16,8 +16,9 @@ END_COLOR='\[\e[m\]'
 export PS1="${GREEN}[\u@\h \t] ${YELLOW}\w ${CYAN}"'$(parse_git_branch)'"\n${END_COLOR}\$ "
 
 alias ls='ls -G'
-alias ll='ls -lFG'
 alias la='ls -aG'
+alias ll='ls -lFG'
+alias lla='ls -laFG'
 alias grep='grep --color=auto'
 alias gitstatus='git status --short --branch'
 

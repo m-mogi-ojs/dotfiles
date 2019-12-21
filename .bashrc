@@ -1,4 +1,9 @@
 export LANG='ja_JP.UTF-8'
+
+if [ -d ~/.nodebrew ]; then
+  export PATH=$PATH:~/.nodebrew/current/bin
+fi
+
   
 function parse_git_branch {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'

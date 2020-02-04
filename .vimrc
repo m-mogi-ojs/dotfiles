@@ -1,15 +1,3 @@
-"NeoBundle
-"if has('vim_starting')
-"    set runtimepath+=~/.vim/bundle/neobundle.vim
-"    call neobundle#begin(expand('~/.vim/bundle/'))
-"      NeoBundle 'scrooloose/nerdtree'
-"    call neobundle#end()
-"endif
-
-" ファイル指定で開かれた場合はNERDTreeは表示しない
-"if !argc()
-"    autocmd vimenter * NERDTree|normal gg3j
-"endif
 
 set nocompatible
 syntax enable
@@ -49,7 +37,7 @@ set t_Co=256
 set clipboard=unnamed
 " indent: 行頭の空白, eol: 改行, start: 挿入モード開始位置より手前の文字でバックスペースを有効化
 set backspace=indent,eol,start
-" □ や○ 文字が崩れる問題を解決
+" □や○文字が崩れる問題を解決
 set ambiwidth=double
 " Vimの「%」を拡張する
 source $VIMRUNTIME/macros/matchit.vim
@@ -61,3 +49,14 @@ set list
 set lcs=tab:>-,trail:-
 " 末尾に改行がついていないファイルを編集し保存するとファイル末尾に改行追加されるのを防ぐ
 set nofixeol
+
+" vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+let g:indent_guides_enable_on_vim_startup = 1
+
+" C-eでNERDTreeを表示
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+" C-pでfzfのFiles
+nnoremap <silent><C-p> :Files<CR>
+" NERDTreeを初期表示する
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

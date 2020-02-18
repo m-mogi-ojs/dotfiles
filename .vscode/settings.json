@@ -20,6 +20,7 @@
     //"shellformat.path": "D:\\tools\\shfmt_v2.6.1_windows_386.exe",
     "workbench.editor.showTabs": true,
     "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
     "workbench.list.keyboardNavigation": "simple",
     "explorer.confirmDelete": false,
     "editor.formatOnPaste": false,

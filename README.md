@@ -8,3 +8,10 @@
   
 - install.sh
   - dotfilewを~/に置く前提になっている
+
+- in Mac
+  - install brew
+  - $ brew install zplug
+  - $ vi ~/.zshrc # setup ZPLUG_HOME
+  - $ brew install vim
+  - $ vi ~/.zshrc # setup alias vim

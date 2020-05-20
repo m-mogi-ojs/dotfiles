@@ -1,5 +1,7 @@
 # zplug settings.
-export ZPLUG_HOME=~/.zplug/zplug
+# export ZPLUG_HOME=~/.zplug/zplug
+echo 'zplug need to setup export ZPLUG_HOME='
+
 source $ZPLUG_HOME/init.zsh
 # zplug
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
@@ -75,7 +77,8 @@ PROMPT="%{${fg[green]}%}[%n]%{${reset_color}%} %~
 
 
 #alias
-alias vim='/usr/local/Cellar/vim/8.2.0100/bin/vim'
+# alias vim='/usr/local/Cellar/vim/8.2.0100/bin/vim'
+echo 'vim need to setup alias vim='
 alias ls='ls -G'
 alias la='ls -aG'
 alias ll='ls -lFG'

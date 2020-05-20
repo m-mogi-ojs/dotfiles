@@ -11,6 +11,7 @@
 
 - in Mac
   - install brew
+    - https://brew.sh/index_ja
   - $ brew install zplug
   - $ vi ~/.zshrc # setup ZPLUG_HOME
   - $ brew install vim

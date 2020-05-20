@@ -5,6 +5,9 @@ filetype plugin indent on
 colorscheme molokai
 set t_Co=256
 
+# Use need to brew install fzf
+set rtp+=/usr/local/opt/fzf
+
 " 検索パターンに大文字小文字を区別しない
 set ignorecase
 " インクリメンタルサーチ. １文字入力毎に検索を行う
@@ -54,9 +57,9 @@ set nofixeol
 let g:indent_guides_enable_on_vim_startup = 1
 
 " C-eでNERDTreeを表示
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
+" nnoremap <silent><C-e> :NERDTreeToggle<CR>
 " C-pでfzfのFiles
-nnoremap <silent><C-p> :Files<CR>
+nnoremap <silent><C-p> :FZF<CR>
 " NERDTreeを初期表示する
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

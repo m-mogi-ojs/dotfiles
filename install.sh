@@ -12,6 +12,6 @@ do
 done
 
 # vscode
-ln -s ~/$DOTPATH/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s ~/$DOTPATH/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s $DOTPATH/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s $DOTPATH/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 

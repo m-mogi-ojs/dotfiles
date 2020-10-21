@@ -18,6 +18,8 @@
     //"editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
     //"editor.formatOnType": true, // 入力した行を自動でフォーマット
     //"shellformat.path": "D:\\tools\\shfmt_v2.6.1_windows_386.exe",
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.vimrc",
     "workbench.editor.showTabs": true,
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,

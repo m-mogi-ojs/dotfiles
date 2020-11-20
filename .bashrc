@@ -29,3 +29,5 @@ alias gitstatus='git status --short --branch'
 
 # gitがない環境下用
 # export PS1="\[\e[32m\][\u@\h \t] \[\e[33m\]\w \[\e[m\]\$ "
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

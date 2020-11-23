@@ -60,6 +60,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 " nnoremap <silent><C-e> :NERDTreeToggle<CR>
 " C-pでfzfのFiles
 nnoremap <silent><C-p> :FZF<CR>
+" vimgrepでquickfixを使う
+autocmd QuickFixCmdPost *grep* cwindow
 " NERDTreeを初期表示する
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

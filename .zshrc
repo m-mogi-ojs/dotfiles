@@ -70,13 +70,14 @@ setopt share_history
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #
 
-PROMPT="%{${fg[green]}%}[%n]%{${reset_color}%} %~
+PROMPT="%{${fg[green]}%}[%*]%{${reset_color}%} %~
 %# "
 
 
 #alias
 # alias vim='/usr/local/Cellar/vim/8.2.0100/bin/vim'
 alias vim='/usr/local/opt/vim/bin/vim'
+alias fzf='/usr/local/opt/fzf/bin/fzf'
 alias ls='ls -G'
 alias la='ls -aG'
 alias ll='ls -lFG'

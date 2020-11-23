@@ -70,7 +70,7 @@ setopt share_history
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #
 
-PROMPT="%{${fg[green]}%}[%n]%{${reset_color}%} %~
+PROMPT="%{${fg[green]}%}[%*]%{${reset_color}%} %~
 %# "
 
 

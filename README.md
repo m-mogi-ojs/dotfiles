@@ -9,7 +9,7 @@
 - install.sh
   - dotfilewを~/に置く前提になっている
 
-- in Mac
+- on Mac
   - install brew
     - https://brew.sh/index_ja
   - $ brew install zplug

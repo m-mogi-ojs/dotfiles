@@ -16,4 +16,4 @@
   - $ vi ~/.zshrc # setup ZPLUG_HOME
   - $ brew install vim
   - $ vi ~/.zshrc # setup alias vim
-  - $ brew cask install visual-studio-code # 未検証
+  - $ brew cask install visual-studio-code

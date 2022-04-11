@@ -69,9 +69,12 @@ setopt share_history
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #
-
-PROMPT="%{${fg[green]}%}[%*]%{${reset_color}%} %~
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+PROMPT="%{${fg[green]}%}[%*]%{${reset_color}%} %~ ${fg[yellow]}$(parse_git_branch)${reset_color}
 %# "
+
 
 
 #alias

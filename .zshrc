@@ -1,5 +1,5 @@
 # zplug settings.
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 # zplug
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
@@ -69,14 +69,20 @@ setopt share_history
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #
+#
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+# PROMPT=\$vcs_info_msg_0_'%# '
+zstyle ':vcs_info:git:*' formats '%b'
 
-PROMPT="%{${fg[green]}%}[%*]%{${reset_color}%} %~
-%# "
+PROMPT="%{${fg[green]}%}[%*]%{${reset_color}%} %~ %# "
 
 
 #alias
-# alias vim='/usr/local/Cellar/vim/8.2.0100/bin/vim'
-alias vim='/usr/local/opt/vim/bin/vim'
+alias vim='/opt/homebrew/opt/vim/bin/vim'
 alias fzf='/usr/local/opt/fzf/bin/fzf'
 alias ls='ls -G'
 alias la='ls -aG'

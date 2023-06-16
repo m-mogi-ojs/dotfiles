@@ -1,31 +1,76 @@
 // settigs.json for Visual Studio Code
 {
-    "window.zoomLevel": -1,
-    //"terminal.integrated.shell.windows": "C:\\tools\\Git\\bin\\bash.exe"
-    //"terminal.integrated.shell.windows": "D:\\tools\\msys32\\usr\\bin\\bash.exe",
-    //"terminal.integrated.env.windows": {
-    //  "MSYSTEM": "MINGW32",
-    //  "CHERE_INVOKING": "1"
-    //},
-    //"terminal.integrated.shellArgs.windows": [
-    //  "--login"
-    //],
-    "terminal.integrated.cursorStyle": "line",
-    "editor.tabSize": 2,
-    "editor.minimap.enabled": false,
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    //"editor.formatOnPaste": true, // ペースト時に自動でフォーマット
-    //"editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
-    //"editor.formatOnType": true, // 入力した行を自動でフォーマット
-    //"shellformat.path": "D:\\tools\\shfmt_v2.6.1_windows_386.exe",
-    "vim.vimrc.enable": true,
-    "vim.vimrc.path": "~/.vimrc",
-    "workbench.editor.showTabs": true,
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "workbench.list.keyboardNavigation": "simple",
-    "explorer.confirmDelete": false,
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": false,
-    "editor.formatOnType": false,
-  }
+  "terminal.integrated.cursorStyle": "line",
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "~/.vimrc",
+  "workbench.editor.showTabs": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "explorer.confirmDelete": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "editor.renderWhitespace": "all",
+  "[erb]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "html.format.indentInnerHtml": true,
+  "html.format.endWithNewline": true,
+  "html.format.extraLiners": "",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+  },
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "none",
+  "prettier.printWidth": 100,
+  "plantuml.commandArgs": ["-DGRAPHVIZ_DOT=/opt/homebrew/Cellar/graphviz/7.0.4/bin/dot"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.maxComputationTime": 0,
+  "ruby.intellisense": "rubyLocate",
+  "ruby.useLanguageServer": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "[ruby]": {
+    "editor.defaultFormatter": "castwide.solargraph"
+  },
+  "[html.erb]": {
+    "editor.defaultFormatter": "castwide.solargraph"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "prettier.singleAttributePerLine": true,
+  "markdown.extension.list.indentationSize": "inherit",
+  "markdownlint.config": {
+    "MD007": {
+      "indent": 4
+    }
+  },
+  "markdown.extension.orderedList.autoRenumber": false,
+}
